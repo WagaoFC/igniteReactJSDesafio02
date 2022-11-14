@@ -5,8 +5,8 @@ import { Home } from './pages/Home'
 export function Router() {
     return (
         <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/cart" element={<Cart />}></Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
         </Routes>
     )
 }
