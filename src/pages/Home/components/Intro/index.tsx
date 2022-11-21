@@ -1,3 +1,4 @@
+import { ShoppingCart, Package, Timer, Coffee } from 'phosphor-react'
 import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from './styles'
 import introImg from '../../../../assets/intro-img.png'
 import { RegularText } from '../../../../components/Typography'
@@ -16,10 +17,18 @@ export function Intro() {
                         </RegularText>
                     </section>
                     <BenefitsContainer>
-                        <p>teste</p>
-                        <p>teste</p>
-                        <p>teste</p>
-                        <p>teste</p>
+                        <p>
+                            <ShoppingCart size={20} weight="fill" />
+                        </p>
+                        <p>
+                            <Package size={20} weight="fill" />
+                        </p>
+                        <p>
+                            <Timer size={20} weight="fill" />
+                        </p>
+                        <p>
+                            <Coffee size={20} weight="fill" />
+                        </p>
                     </BenefitsContainer>
                 </div>
                 <img src={introImg} />
