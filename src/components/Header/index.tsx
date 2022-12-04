@@ -7,15 +7,19 @@ export function Header() {
     return (
         <HeaderContainer>
             <div className='container'>
-                <img src={logoCoffeeDelivery} alt='Copo de café com um foguete do lado das palavras Coffee Delivery' />
+                <NavLink to='/'>
+                    <img src={logoCoffeeDelivery} alt='Copo de café com um foguete do lado das palavras Coffee Delivery' />
+                </NavLink>
                 <HeaderButtonsContainer>
                     <HeaderButton variant='purple'>
                         <MapPin size={20} weight="fill" />
                         Araxá, MG
                     </HeaderButton>
-                    <HeaderButton variant='yellow'>
-                        <ShoppingCart size={20} weight="fill" />
-                    </HeaderButton>
+                    <NavLink to='/cart'>
+                        <HeaderButton variant='yellow'>
+                            <ShoppingCart size={20} weight="fill" />
+                        </HeaderButton>
+                    </NavLink>
                 </HeaderButtonsContainer>
             </div>
         </HeaderContainer>
