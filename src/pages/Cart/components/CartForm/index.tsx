@@ -2,7 +2,8 @@ import { MapPinLine } from 'phosphor-react'
 import { useTheme } from 'styled-components';
 import { TitleText } from "../../../../components/Typography";
 import { SectionTitle } from "../SectionTitle";
-import { CartFormContainer, FormSectionContainer } from "./styled";
+import { AddressForm } from './AddressForm';
+import { CartFormContainer, FormSectionContainer } from "./styles";
 
 export function CartForm() {
     const { colors } = useTheme();
@@ -17,6 +18,7 @@ export function CartForm() {
                     subtitle='Informe o endereço onde deseja receber seu pedido'
                     icon={<MapPinLine color={colors['brand-yellow-dark']} size={22} />}
                 />
+                <AddressForm />
             </FormSectionContainer>
         </CartFormContainer>
     )
